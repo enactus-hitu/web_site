@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons frm font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <header>
+        <a href="#" class="logo"><i class="fa-sharp fa-solid fa-shirt"></i> adidas</a>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new">New Arrival</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+
+        <!-- Icons -->
+        <div class="header-icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            <i class="fa-solid fa-user" id="user-icon"></i>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="search" placeholder="Search Here...">
+        </div>
+
+        <!-- Cart Box -->
+        <div class="cart">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img/new1.png" alt="">
+                <div class="text">
+                    <h3>T-Shirt</h3>
+                    <span>EGP 975</span>
+                    <span>x1</span>
+                </div>
+                <i class="fa-solid fa-trash" id="trash"></i>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="img/new2.png" alt="">
+                <div class="text">
+                    <h3>T-Shirt</h3>
+                    <span>EGP 975</span>
+                    <span>x1</span>
+                </div>
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <h2>Total: EGP 1950</h2>
+            <a href="#" class="btn">Checkout</a>
+
+        </div>
+
+        <!-- User -->
+        <div class="user">
+            <h2>Login Now</h2>
+            <input type="email" placeholder="Your Email...">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Login" class="login-btn">
+            <p>Forget Password <a href="#">Reeset Now</a></p>
+            <p>Don't have acoount <a href="#">Create one</a></p>
+        </div>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Shop Now</span>
+            <h1>New Arrival of<br> Fresh Products</h1>
+            <a href="#new" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/home.png" alt="">
+        </div>
+    </section>
+    <!-- New Arrival -->
+    <section class="new" id="new">
+        <div class="heading">
+            <h2>New <span>Arrival</span></h2>
+        </div>
+        <div class="swiper new-arrival mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="img/new1.png" alt="">
+                    <div class="content">
+                        <a href="#products" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/new2.png" alt="">
+                    <div class="content">
+                        <a href="#products" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/new3.png" alt="">
+                    <div class="content">
+                        <a href="#products" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/new4.png" alt="">
+                    <div class="content">
+                        <a href="#products" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/new5.png" alt="">
+                    <div class="content">
+                        <a href="#products" class="btn">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/new6.png" alt="">
+                    <div class="content">
+                        <a href="#products" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pagination bullets -->
+            <div class="swiper-pagination"></div>
+
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product" id="products">
+        <div class="heading">
+            <h2>Our <span>Products</span></h2>
+        </div>
+        <div class="product-container">
+            <div class="box">
+                <img src="img/p1.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p2.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p3.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p4.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p5.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p6.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p7.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/p8.jpg" alt="">
+                <div class="content">
+                    <h2>T-Shirt 14A</h2>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span>EGP 975</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <h2>Our <span>Customer's</span></h2>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <img src="img/r1.jpg" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus commodi soluta voluptates nobis modi,
+                    hic reprehenderit officiis magni quo iste! Amet placeat asperiores tenetur quisquam dolores labore
+                    unde vel incidunt!</p>
+                <h2>Michael</h2>
+            </div>
+
+            <div class="box">
+                <img src="img/r2.jpg" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus commodi soluta voluptates nobis modi,
+                    hic reprehenderit officiis magni quo iste! Amet placeat asperiores tenetur quisquam dolores labore
+                    unde vel incidunt!</p>
+                <h2>Diana</h2>
+            </div>
+
+            <div class="box">
+                <img src="img/r3.jpg" alt="">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus commodi soluta voluptates nobis modi,
+                    hic reprehenderit officiis magni quo iste! Amet placeat asperiores tenetur quisquam dolores labore
+                    unde vel incidunt!</p>
+                <h2>Tony</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>adidas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eos qui, facere quasi cumque animi amet,
+                dolorum corporis dolorem id voluptatum tenetur laudantium adipisci dolore dicta maiores facilis optio?
+                Obcaecati?</p>
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>support</h3>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Our Branches</h3>
+            <li><a href="#">Egypt</a></li>
+            <li><a href="#">UAE</a></li>
+            <li><a href="#">Palestine</a></li>
+            <li><a href="#">Spain</a></li>
+            <li><a href="#">United States</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Payment Method</h3>
+            <div class="payment">
+                <img src="img/visa.png" alt="">
+                <img src="img/mastercard.png" alt="">
+                <img src="img/paypal.png" alt="">
+                <img src="img/american-express.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&copy; MohamedSamy | All Right Reserved.</p>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
